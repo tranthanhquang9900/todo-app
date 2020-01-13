@@ -10,9 +10,8 @@
 <script>
 import TodoList from "./components/TodoList";
 import CreateTodo from "./components/CreateTodo";
-
 export default {
-  name: "App",
+  name: "app",
   components: {
     TodoList,
     CreateTodo
@@ -44,13 +43,11 @@ export default {
     };
   },
   methods: {
-    addTodo() {
-      debugger;
-      console.log(this.todos);
-      // this.todos.push({
-      //   title,
-      //   done: false
-      // });
+    addTodo(title) {
+      this.todos.push({
+        title,
+        done: false
+      });
     }
   }
 };

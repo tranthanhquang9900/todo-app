@@ -7,7 +7,6 @@
       v-on:delete-todo="deleteTodo"
       v-on:complete-todo="completeTodo"
       v-for="todo in todos"
-      v-bind:todo="todo"
       :todo.sync="todo"
     ></todo>
   </div>
